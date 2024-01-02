@@ -1,3 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #001233;
+    color: #CAC0B3;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    margin: 0;
+}
+
 .main-header {
     background-color: #001233;
     width: 100%;
