@@ -80,6 +80,7 @@ body {
 .main-footer {
     padding: 1.5em;
     margin: 1em 0;
+    text-align: center;
 }
 
 .main-footer__links {
@@ -104,6 +105,21 @@ body {
     color: #FFF;
     text-decoration: none;
 }
+
+.main-footer p {
+    font-size: .75em;
+}
+
+.credit {
+    color: #CAC0B3;
+    text-decoration: underline;
+}
+
+.credit:hover,
+.credit:active {
+    text-decoration: none;
+}
+
 
 .button {
     background-color: #001233;

@@ -23,6 +23,12 @@ h1 {
     text-align: center;
 }
 
+.plan__list {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
 .plan {
     background: #CAC0B3;
     color: #001233;
@@ -113,6 +119,7 @@ h1 {
 }
 
 .key-feature__description {
+    color: #001233;
     text-align: center;
     font-weight: bold;
     font-size 1.5em;
