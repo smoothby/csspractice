@@ -10,7 +10,7 @@ body {
 }
 
 .main-header {
-    background-color: #001233;
+    background-color: #1a253a;
     width: 100%;
     position: fixed;
     top: 0;
@@ -30,6 +30,14 @@ body {
     font-family: 'PT Sans', sans-serif;
     font-size: 1.5em;
     font-weight: 700;
+    display: inline-block;
+    vertical-align: middle;
+    height: 1.5em;
+}
+
+.main-header__brand img {
+    height: 100%;
+    width: 100%;
 }
 
 .main-header__brand:hover {
@@ -83,8 +91,20 @@ body {
 
 .main-footer {
     padding: 1.5em;
-    margin: 1em 0;
+    margin: 0;
     text-align: center;
+    background: #001233;
+}
+
+.footer-nav {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.footer-nav p {
+    padding: .75em 0;
+    margin: 0;
 }
 
 .main-footer__links {

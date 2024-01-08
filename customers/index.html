@@ -24,11 +24,10 @@
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;700&family=PT+Sans:wght@400;700&family=Teko:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../styles/shared.css">
-    <link rel="stylesheet" href="../styles/packages.css">
+    <link rel="stylesheet" href="../styles/customers.css">
 </head>
 
 <body>
-    <div class="background"></div>
     <header class="main-header">
         <div>
             <a href="../index.html" class="main-header__brand">
@@ -38,10 +37,10 @@
         <nav class="main-nav">
             <ul class="main-nav__items">
                 <li class="main-nav__item">
-                    <a href="index.html">Packages</a>
+                    <a href="../packages/index.html">Packages</a>
                 </li>
                 <li class="main-nav__item">
-                    <a href="../customers/index.html">Customers</a>
+                    <a href="index.html">Customers</a>
                 </li>
                 <li class="main-nav__item main-nav__item--cta">
                     <a href="../start-hosting/index.html">Start Hosting</a>
@@ -50,32 +49,33 @@
         </nav>
     </header>
     <main>
-        <section class="package" id="plus">
-            <a href="#">
-                <h1 class="package__title--plus">Our PLUS Plan</h1>
-                <h2 class="package__badge">RECOMMENDED</h2>
-                <h2 class="package__subtitle">The most popular choice for our customers.</h2>
-                <p class="package__info">Benefit from increased storage and faster support to ensure that your
-                    mission-critical data and
-                    applications are always available! </p>
-            </a>
-        </section>
-        <section class="package" id="free">
-            <a href="#">
-                <h1 class="package__title">Our FREE Plan</h1>
-                <h2 class="package__subtitle">An extremely solid start into our hosting world.</h2>
-                <p class="package__info">Get started immediately at zero cost!</p>
-            </a>
-        </section>
-        <div class="clearfix"></div>
-        <section class="package" id="premium">
-            <a href="#">
-                <h1 class="package__title--premium">Our PREMIUM Plan</h1>
-                <h2 class="package__subtitle">All your enterprise needs. Instant support, guaranteed uptime.</h2>
-                <p class="package__info">The best solution for small to large companies, because hosting shouldn't be a
-                    barrier!</p>
-            </a>
-        </section>
+        <div class="testimonial" id="customer-1">
+            <div class="testimonial__image-container">
+                <img src="../images/customer-1.jpg" alt="Mike Statham - Customer" class="testimonial__image">
+            </div>
+            <div class="testimonial__info">
+                <h1 class="testimonial__name">Big McLargehuge</h1>
+                <h2 class="testimonial__subtitle">Founder of
+                    <a href="#">Space Mutiny</a>
+                </h2>
+                <p class="testimonial__text">Cras placerat venenatis dui, eu venenatis ipsum egestas eget. Maecenas
+                    eu sodales lacus, ac malesuada purus.</p>
+            </div>
+        </div>
+        <div class="testimonial" id="customer-2">
+
+            <div class="testimonial__info">
+                <h1 class="testimonial__name">Mega Cynthia</h1>
+                <h2 class="testimonial__subtitle">Hosts podcasts and blogs
+                </h2>
+                <p class="testimonial__text">Vestibulum vehicula tellus quam, eget tempus enim accumsan vitae. Donec
+                    imperdiet erat turpis, et eleifend nisl maximus eget.
+                </p>
+            </div>
+            <div class="testimonial__image-container">
+                <img src="../images/customer-2.jpg" alt="John Mellow - Customer" class="testimonial__image">
+            </div>
+        </div>
     </main>
     <footer class="main-footer">
         <nav class="footer-nav">
@@ -87,6 +87,17 @@
                     <a href="#">Terms</a>
                 </li>
             </ul>
+            <p> Photo by <a
+                    href="https://unsplash.com/@lukasgodina?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                    class="credit">Lukas Godina</a> on <a
+                    href="https://unsplash.com/photos/man-in-black-crew-neck-t-shirt-wNB3DFN3u9Q?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                    class="credit">Unsplash</a> &amp;
+                <a href="https://unsplash.com/@jassirjonis?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                    class="credit">Jassir Jonis</a> on <a
+                    href="https://unsplash.com/photos/woman-in-black-crew-neck-shirt-yFoZ6B6KGN8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                    class="credit">Unsplash</a>
+            </p>
+
         </nav>
     </footer>
 </body>
