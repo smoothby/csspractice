@@ -3,7 +3,8 @@ main {
 }
 
 .background {
-    background: url("../images/pkgs-header-bg.jpg");
+    background: url("../images/pkgs-header-bg.jpg") center/cover;
+    filter: blur(2px);
     width: 100%;
     height: 100%;
     position: fixed;
@@ -12,11 +13,15 @@ main {
 
 .package {
     width: 80%;
-    margin: 1.5em 0;
+    margin: 2em 0;
     border: 4px solid #308972;
     border-left: none;
     background-color: #CCC;
     position: relative;
+}
+
+.package:first-of-type {
+    margin-top: 3em;
 }
 
 .package:hover,
