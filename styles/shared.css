@@ -3,10 +3,22 @@
 }
 
 body {
+
     background-color: #001233;
     color: #CAC0B3;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
     margin: 0;
+}
+
+.backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .main-header {
@@ -15,7 +27,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    padding: .5em .75em;
+    padding: 12px 16px;
     z-index: 1;
 }
 
@@ -27,12 +39,11 @@ body {
 .main-header__brand {
     color: #CAC0B3;
     text-decoration: none;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 1.5em;
+    font-size: 22px;
     font-weight: 700;
     display: inline-block;
     vertical-align: middle;
-    height: 1.5em;
+    height: 32px;
 }
 
 .main-header__brand img {
@@ -57,40 +68,40 @@ body {
     list-style: none;
 }
 
+.main-nav__item {
+    display: inline-block;
+    margin: 0 16px;
+}
+
 .main-nav__item a {
-    color: #CAC0B3;
+    color: #FFF;
     text-decoration: none;
     font-weight: bold;
-    padding: .25em 0;
+    padding: 4px 0;
 }
 
 .main-nav__item a:hover,
 .main-nav__item a:active {
-    color: #CAC0B3;
-    border-bottom: 5px solid #CAC0B3;
-}
-
-.main-nav__item {
-    display: inline-block;
-    margin: 0 1em;
+    color: #FFF;
+    border-bottom: 5px solid #FFF;
 }
 
 .main-nav__item--cta a {
     color: #001233;
     background: #FF595A;
-    padding: .5em .75em;
-    border-radius: .5em;
+    padding: 8px 16px;
+    border-radius: 5px;
 }
 
 .main-nav__item--cta a:hover,
 .main-nav__item--cta a:active {
     color: #001233;
-    background: #CAC0B3;
+    background: #FFF;
     border: none;
 }
 
 .main-footer {
-    padding: 1.5em;
+    padding: 32px;
     margin: 0;
     text-align: center;
     background: #1a253a;
@@ -103,7 +114,7 @@ body {
 }
 
 .footer-nav p {
-    padding: .75em 0;
+    padding: 8px 0;
     margin: 0;
 }
 
@@ -116,27 +127,27 @@ body {
 
 .main-footer__link {
     display: inline-block;
-    margin: 0 .75em;
+    margin: 0 12px;
 }
 
 .main-footer__link a {
-    color: #CAC0B3;
+    color: #FFF;
     text-decoration: none;
 }
 
 .main-footer__link a:hover,
 .main-footer__link a:active {
-    color: #FFF;
+    color: #CCC;
     text-decoration: none;
 }
 
 .main-footer p {
-    font-size: .75em;
+    font-size: 12px;
 }
 
 .credit {
-    color: #CAC0B3;
-    text-decoration: underline;
+    color: #FFF;
+    text-decoration: underline dotted #CCC;
 }
 
 .credit:hover,
@@ -147,12 +158,12 @@ body {
 
 .button {
     background-color: #001233;
-    color: #CAC0B3;
+    color: #FFF;
     font: inherit;
     font-weight: bold;
     border: none;
-    padding: .5em;
-    border-radius: .5em;
+    padding: 8px;
+    border-radius: 5px;
     cursor: pointer;
 }
 

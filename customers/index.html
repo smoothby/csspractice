@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- 
-███╗   ███╗ █████╗ ████████╗████████╗██╗   ██╗    ██████╗    
-████╗ ████║██╔══██╗╚══██╔══╝╚══██╔══╝╚██╗ ██╔╝    ██╔══██╗   
-██╔████╔██║███████║   ██║      ██║    ╚████╔╝     ██████╔╝   
-██║╚██╔╝██║██╔══██║   ██║      ██║     ╚██╔╝      ██╔══██╗   
-██║ ╚═╝ ██║██║  ██║   ██║      ██║      ██║       ██████╔╝██╗
-╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝      ╚═╝      ╚═╝       ╚═════╝ ╚═╝ 2023
+<!--
+                            █████     █████                     █████       
+                           ░░███     ░░███                     ░░███        
+ █████████████    ██████   ███████   ███████   █████ ████       ░███████    
+░░███░░███░░███  ░░░░░███ ░░░███░   ░░░███░   ░░███ ░███        ░███░░███   
+ ░███ ░███ ░███   ███████   ░███      ░███     ░███ ░███        ░███ ░███   
+ ░███ ░███ ░███  ███░░███   ░███ ███  ░███ ███ ░███ ░███        ░███ ░███   
+ █████░███ █████░░████████  ░░█████   ░░█████  ░░███████        ████████  ██
+░░░░░ ░░░ ░░░░░  ░░░░░░░░    ░░░░░     ░░░░░    ░░░░░███       ░░░░░░░░  ░░ 
+                                                ███ ░███                    
+                                               ░░██████                     
+                                                ░░░░░░                      
 -->
 
 <head>
@@ -22,13 +27,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;700&family=PT+Sans:wght@400;700&family=Teko:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../styles/shared.css">
     <link rel="stylesheet" href="../styles/customers.css">
 </head>
 
 <body>
+    <div class="backdrop"></div>
     <header class="main-header">
         <div>
             <a href="../index.html" class="main-header__brand">
@@ -53,29 +59,40 @@
         <div>
             <div class="testimonial" id="customer-1">
                 <div class="testimonial__image-container">
-                    <img src="../images/customer-1.jpg" alt="Mike Statham - Customer" class="testimonial__image">
+                    <img src="../images/customer-1.jpg" alt="Customer 1" class="testimonial__image">
                 </div>
                 <div class="testimonial__info">
                     <h1 class="testimonial__name">Big McLargehuge</h1>
                     <h2 class="testimonial__subtitle">Founder of
                         <a href="#" class="testimonial__subtitle-link">Space Mutiny</a>
                     </h2>
-                    <p class="testimonial__text">Cras placerat venenatis dui, eu venenatis ipsum egestas eget. Maecenas
-                        eu sodales lacus, ac malesuada purus.</p>
+                    <p class="testimonial__text">Phasellus in risus hendrerit, scelerisque massa sit amet, ultrices dui.
+                        Suspendisse et finibus massa. Morbi sit amet lacinia magna. Suspendisse maximus augue mauris, id
+                        ullamcorper mauris condimentum aliquam. Sed tristique sem vitae turpis pharetra, at tincidunt
+                        tellus egestas. Nunc convallis vitae orci a ullamcorper. Aliquam tincidunt est non euismod
+                        suscipit. Integer condimentum malesuada condimentum. Integer commodo est ac nibh tempus
+                        consequat. Morbi consectetur quam est, sit amet tincidunt purus iaculis tempus. Orci varius
+                        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum congue ex
+                        eu ex fringilla tincidunt.</p>
                 </div>
             </div>
             <div class="testimonial" id="customer-2">
-
                 <div class="testimonial__info">
                     <h1 class="testimonial__name">Mega Cynthia</h1>
                     <h2 class="testimonial__subtitle">Hosts podcasts and blogs
                     </h2>
-                    <p class="testimonial__text">Vestibulum vehicula tellus quam, eget tempus enim accumsan vitae. Donec
-                        imperdiet erat turpis, et eleifend nisl maximus eget.
+                    <p class="testimonial__text">Proin pretium efficitur diam vitae varius. Donec vulputate, arcu ac
+                        ultricies congue, erat urna porta neque, ut luctus turpis metus scelerisque sem. Etiam et lorem
+                        turpis. Nullam sollicitudin quam eu augue dapibus, in cursus nulla bibendum. Phasellus a nibh
+                        ipsum. Morbi eu mollis lectus. Nulla scelerisque ullamcorper dolor a maximus. Morbi rhoncus
+                        fermentum lobortis. Morbi egestas sapien efficitur, hendrerit metus at, tincidunt mi. Aliquam
+                        efficitur bibendum lacus nec egestas. Ut imperdiet est blandit quam lobortis, vel dictum velit
+                        dapibus. Praesent orci nulla, facilisis ac commodo sed, facilisis ac dolor. Cras auctor lectus
+                        consectetur leo vestibulum, at maximus sem ultricies.
                     </p>
                 </div>
                 <div class="testimonial__image-container">
-                    <img src="../images/customer-2.jpg" alt="John Mellow - Customer" class="testimonial__image">
+                    <img src="../images/customer-2.jpg" alt="Customer 2" class="testimonial__image">
                 </div>
             </div>
         </div>
