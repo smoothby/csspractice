@@ -2,23 +2,36 @@ let backdrop = document.querySelector('.backdrop');
 let modal = document.querySelector('.modal');
 let modalButtonNo = document.querySelector('.modal__action--no');
 let selectPlanButtons = document.querySelectorAll('.plan button');
+let burgerButton = document.querySelector('.toggle-button');
+let mobileNav = document.querySelector('.mobile-nav');
 
+// Grab all of the plan buttons
 for (var i = 0; i < selectPlanButtons.length; i++) {
     selectPlanButtons[i].addEventListener('click', function() {
-        modal.style.display = 'block';
-        backdrop.style.display = 'block';
+        modal.classList.add('open');
+        backdrop.classList.add('open');
     });
 }
 
+// Close the modal popup
 function closeModal() {
-    modal.style.display = 'none';
-    backdrop.style.display = 'none';
+    modal.classList.remove('open');
+    backdrop.classList.remove('open');
 }
 
-backdrop.addEventListener('click', closeModal);
+// Close the mobile nav when backdrop clicked
+backdrop.addEventListener('click', function() {
+    mobileNav.classList.remove('open');
+    closeModal();
+});
 
+// Close modal popup when "No" button is clicked
 modalButtonNo.addEventListener('click', closeModal);
 
-
+// Open the mobile nav
+burgerButton.addEventListener('click', function() {
+    mobileNav.classList.add('open');
+    backdrop.classList.add('open');
+});
 
 // console.log(selectPlanButtons);
