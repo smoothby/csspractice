@@ -29,6 +29,9 @@ main {
 }
 
 .main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #1a253a;
     width: 100%;
     top: 0;
@@ -37,13 +40,8 @@ main {
     z-index: 1;
 }
 
-.main-header>div {
-    display: inline-block;
-    vertical-align: middle;
-}
-
 .toggle-button {
-    width: 3rem;
+    width: 2.5rem;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -61,21 +59,19 @@ main {
     height: 0.2rem;
     background: #FFF;
     display: block;
-    margin: 0.6rem 0;
+    margin: 0.3rem 0;
 }
-
 
 .main-header__brand {
     color: #CAC0B3;
     text-decoration: none;
     font-weight: 700;
-    display: inline-block;
-    vertical-align: middle;
-    height: 2rem;
+    visibility: hidden;
 }
 
 .main-header__brand img {
-    height: 100%;
+    height: 2rem;
+    vertical-align: middle;
 }
 
 .main-header__brand:hover {
@@ -87,13 +83,13 @@ main {
 }
 
 .main-nav__items {
+    display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
 .main-nav__item {
-    display: inline-block;
     margin: 0 1rem 0 0;
 }
 
@@ -148,15 +144,17 @@ main {
 }
 
 .main-footer__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 .main-footer__link {
-    display: block;
-    margin: 0.75rem 0;
+    margin: 0.5rem 0;
 }
 
 .main-footer__link a {
@@ -191,15 +189,19 @@ main {
     top: 0;
     left: 0;
     background: #308972;
-    width: 80%;
+    width: 70%;
     height: 100vh;
 }
 
 .mobile-nav__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 90%;
     height: 100%;
     list-style: none;
-    margin: 10% auto;
+    margin: 0 auto;
     padding: 0;
     text-align: center;
 }
@@ -261,15 +263,20 @@ main {
         display: none;
     }
 
+    .main-header__brand {
+        visibility: visible;
+    }
+
     .main-nav {
-        display: inline-block;
-        text-align: right;
-        width: calc(100% - 44px);
-        vertical-align: middle;
+        display: flex;
     }
 
     .main-footer__link {
-        display: inline-block;
-        margin: 0 0.75rem;
+        margin: 0 0.5rem;
+    }
+
+    .main-footer__links {
+        flex-direction: row;
+        justify-content: center;
     }
 }
