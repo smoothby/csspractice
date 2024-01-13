@@ -10,6 +10,11 @@ body {
     margin: 0;
 }
 
+main {
+    min-height: calc(100vh - 2rem - 7.2rem);
+    margin: 0 auto;
+}
+
 .backdrop {
     position: fixed;
     display: none;
@@ -24,7 +29,6 @@ body {
 .main-header {
     background-color: #1a253a;
     width: 100%;
-    position: fixed;
     top: 0;
     left: 0;
     padding: 0.75rem 1rem;
@@ -62,16 +66,14 @@ body {
 .main-header__brand {
     color: #CAC0B3;
     text-decoration: none;
-    font-size: 1.4rem;
     font-weight: 700;
     display: inline-block;
     vertical-align: middle;
-    height: 32px;
+    height: 2rem;
 }
 
 .main-header__brand img {
     height: 100%;
-    width: 100%;
 }
 
 .main-header__brand:hover {
@@ -79,10 +81,7 @@ body {
 }
 
 .main-nav {
-    display: inline-block;
-    text-align: right;
-    width: calc(100% - 122px);
-    vertical-align: middle;
+    display: none;
 }
 
 .main-nav__items {
@@ -93,7 +92,7 @@ body {
 
 .main-nav__item {
     display: inline-block;
-    margin: 0 1rem;
+    margin: 0 1rem 0 0;
 }
 
 .main-nav__item a,
@@ -131,7 +130,8 @@ body {
     padding: 2rem;
     margin: 0;
     text-align: center;
-    background: #1a253a;
+    /* background: #1a253a; */
+    background-color: #308972;
 }
 
 .footer-nav {
@@ -153,8 +153,8 @@ body {
 }
 
 .main-footer__link {
-    display: inline-block;
-    margin: 0 0.75rem;
+    display: block;
+    margin: 0.75rem 0;
 }
 
 .main-footer__link a {
@@ -233,4 +233,22 @@ body {
 
 .open {
     display: block !important;
+}
+
+@media (min-width: 40rem) {
+    .toggle-button {
+        display: none;
+    }
+
+    .main-nav {
+        display: inline-block;
+        text-align: right;
+        width: calc(100% - 44px);
+        vertical-align: middle;
+    }
+
+    .main-footer__link {
+        display: inline-block;
+        margin: 0 0.75rem;
+    }
 }
