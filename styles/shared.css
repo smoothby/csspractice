@@ -231,6 +231,25 @@ main {
     outline: none;
 }
 
+/* .button[disabled] {
+    cursor: not-allowed;
+    border: #474747;
+    background: #CCC;
+    color: #474747;
+
+} */
+
+.submit-button {
+    background-color: #308972;
+    color: #FFF;
+}
+
+.submit-button:hover,
+.submit-button:active {
+    background-color: #FFF;
+    color: #308972;
+}
+
 .open {
     display: block !important;
 }

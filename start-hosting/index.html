@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+                            █████     █████                     █████       
+                           ░░███     ░░███                     ░░███        
+ █████████████    ██████   ███████   ███████   █████ ████       ░███████    
+░░███░░███░░███  ░░░░░███ ░░░███░   ░░░███░   ░░███ ░███        ░███░░███   
+ ░███ ░███ ░███   ███████   ░███      ░███     ░███ ░███        ░███ ░███   
+ ░███ ░███ ░███  ███░░███   ░███ ███  ░███ ███ ░███ ░███        ░███ ░███   
+ █████░███ █████░░████████  ░░█████   ░░█████  ░░███████        ████████  ██
+░░░░░ ░░░ ░░░░░  ░░░░░░░░    ░░░░░     ░░░░░    ░░░░░███       ░░░░░░░░  ░░ 
+                                                ███ ░███                    
+                                               ░░██████                     
+                                                ░░░░░░                      
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Dummy website - CSS3, no framework.</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/shared.css">
+    <link rel="stylesheet" href="../styles/start-hosting.css">
+</head>
+
+<body>
+    <div class="backdrop"></div>
+    <header class="main-header">
+        <div>
+            <button class="toggle-button">
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+            </button>
+            <a href="../index.html" class="main-header__brand">
+                <img src="../android-chrome-192x192.png" alt="Company Logo">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="../packages/index.html">Packages</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="../customers/index.html">Customers</a>
+                </li>
+                <li class="main-nav__item main-nav__item--cta">
+                    <a href="index.html">Start Hosting</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <nav class="mobile-nav">
+        <ul class="mobile-nav__items">
+            <li class="mobile-nav__item">
+                <a href="../packages/index.html">Packages</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="../customers/index.html">Customers</a>
+            </li>
+            <li class="mobile-nav__item mobile-nav__item--cta">
+                <a href="index.html">Start Hosting</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="signup-page">
+        <h1 class="signup-title">Holy Diver, soul survivor!</h1>
+        <form action="index.html" class="signup-form">
+            <label for="title">Title</label>
+            <select id="title">
+                <option value="mr">Mr.</option>
+                <option value="mrs">Mrs.</option>
+                <option value="ms">Ms.</option>
+            </select>
+            <label for="first-name">First name</label>
+            <input type="text" id="first-name" required>
+            <label for="last-name">Last name</label>
+            <input type="text" id="last-name" required>
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" required>
+            <input type="checkbox" id="agree-terms" required>
+            <label for="agree-terms">Agree to
+                <a href="#">Terms &amp; Conditions</a>
+            </label>
+            <button type="submit" class="button submit-button">Sign Up</button>
+        </form>
+    </main>
+    <footer class="main-footer">
+        <nav class="footer-nav">
+            <ul class="main-footer__links">
+                <li class="main-footer__link">
+                    <a href="#">Support</a>
+                </li>
+                <li class="main-footer__link">
+                    <a href="#">Terms</a>
+                </li>
+            </ul>
+            <p>Photo by <a
+                    href="https://unsplash.com/@hudsonhintze?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                    class="credit">Hudson Hintze</a> on <a
+                    href="https://unsplash.com/photos/orange-and-blue-cloudy-sky-SXSYjCgUo9Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                    class="credit">Unsplash</a></p>
+        </nav>
+    </footer>
+    <script src="../js/shared.js"></script>
+</body>
+
+</html>
