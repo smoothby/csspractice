@@ -37,8 +37,8 @@
 }
 
 .testimonial__name {
+    display: inline-flex;
     font-size: 2rem;
-    display: inline-block;
     margin: 0.75rem 0;
     padding: 0.5rem;
     color: #FF595A;
@@ -70,19 +70,19 @@
 
 @media (min-width: 40rem) {
     .testimonial {
+        display: flex;
+        align-items: center;
         margin: 2rem auto;
         max-width: 1500px;
     }
 
     .testimonial__image-container {
-        display: inline-block;
-        vertical-align: middle;
         width: 66%;
+        flex-grow: 1;
     }
 
     .testimonial__info {
-        display: inline-block;
-        vertical-align: middle;
         width: 30%;
+        flex-grow: 1;
     }
 }
