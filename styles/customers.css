@@ -1,10 +1,12 @@
 .testimonial {
     font-size: 1.2rem;
     background-color: #308972;
+    overflow: hidden;
 }
 
 .testimonial__info {
     padding: 0.9rem;
+    z-index: 100;
 }
 
 /* .testimonial__list {
@@ -79,6 +81,12 @@
     .testimonial__image-container {
         width: 66%;
         flex-grow: 1;
+        transform: skew(20deg);
+        overflow: hidden;
+    }
+
+    .testimonial__image {
+        transform: skew(-20deg) scale(1.5);
     }
 
     .testimonial__info {
