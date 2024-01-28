@@ -1,10 +1,18 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 main {
   padding-top: 1rem;
 }
 
 .background {
-  background: url("../images/pkgs-header-bg.jpg") center/cover;
-  filter: blur(2px);
+  background: url("../../images/pkgs-header-bg.jpg") center/cover;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -23,8 +31,10 @@ main {
 
 .package:hover,
 .package:active {
-  box-shadow: 5px 5px 5px #001233;
-  animation: push 1s ease-out forwards;
+  -webkit-box-shadow: 5px 5px 5px #001233;
+          box-shadow: 5px 5px 5px #001233;
+  -webkit-animation: push 1s ease-out forwards;
+          animation: push 1s ease-out forwards;
 }
 
 .package a {
@@ -41,20 +51,24 @@ main {
   right: 0;
   margin: 0;
   background: #FF595A;
-  box-shadow: 1px 1px 0 #001233;
+  -webkit-box-shadow: 1px 1px 0 #001233;
+          box-shadow: 1px 1px 0 #001233;
   color: #001233;
   font-size: 0.9rem;
   text-align: center;
   padding: 0.5rem;
   border-radius: 5px;
-  transform: rotate(45deg) translate(3.5rem, -1rem);
+  -webkit-transform: rotate(45deg) translate(3.5rem, -1rem);
+      -ms-transform: rotate(45deg) translate(3.5rem, -1rem);
+          transform: rotate(45deg) translate(3.5rem, -1rem);
 }
 
 .package__title {
   background: #7A7A7A;
   color: #001233;
   padding: 0.6rem;
-  box-shadow: 5px 5px 0 #001233;
+  -webkit-box-shadow: 5px 5px 0 #001233;
+          box-shadow: 5px 5px 0 #001233;
   border-radius: 5px;
 }
 
@@ -62,7 +76,8 @@ main {
   background: #308972;
   color: #001233;
   padding: 0.6rem;
-  box-shadow: 5px 5px 0 #001233;
+  -webkit-box-shadow: 5px 5px 0 #001233;
+          box-shadow: 5px 5px 0 #001233;
   border-radius: 5px;
 }
 
@@ -70,7 +85,8 @@ main {
   background: #FF595A;
   color: #001233;
   padding: 0.6rem;
-  box-shadow: 5px 5px 0 #001233;
+  -webkit-box-shadow: 5px 5px 0 #001233;
+          box-shadow: 5px 5px 0 #001233;
   border-radius: 5px;
 }
 
@@ -78,7 +94,8 @@ main {
   background: #001233;
   color: #CAC0B3;
   padding: 0.6rem;
-  box-shadow: 5px 5px 0 #308972;
+  -webkit-box-shadow: 5px 5px 0 #308972;
+          box-shadow: 5px 5px 0 #308972;
   border-radius: 5px;
 }
 
@@ -108,7 +125,8 @@ main {
 
 #free:hover,
 #free:active {
-  box-shadow: -5px 5px 5px #001233;
+  -webkit-box-shadow: -5px 5px 5px #001233;
+          box-shadow: -5px 5px 5px #001233;
 }
 
 #premium {
@@ -128,16 +146,31 @@ main {
     border-right: 4px solid #308972;
   }
 }
-@keyframes push {
+@-webkit-keyframes push {
   0% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   33% {
-    transform: translateY(-0.5rem);
+    -webkit-transform: translateY(-0.5rem);
+            transform: translateY(-0.5rem);
   }
   100% {
-    transform: translateY(-0.75rem);
+    -webkit-transform: translateY(-0.75rem);
+            transform: translateY(-0.75rem);
   }
 }
-
-/*# sourceMappingURL=packages.css.map */
+@keyframes push {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  33% {
+    -webkit-transform: translateY(-0.5rem);
+            transform: translateY(-0.5rem);
+  }
+  100% {
+    -webkit-transform: translateY(-0.75rem);
+            transform: translateY(-0.75rem);
+  }
+}

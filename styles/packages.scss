@@ -1,0 +1,150 @@
+@use 'variables' as v;
+
+main {
+    padding-top: 1rem;
+}
+
+.background {
+    background: url("../images/pkgs-header-bg.jpg") center/cover;
+    filter: blur(2px);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+
+.package {
+    width: 80%;
+    margin: 2rem 0 2rem 0;
+    border: 4px solid v.$teal-green;
+    border-left: none;
+    background-color: #CCC;
+    position: relative;
+    overflow: hidden;
+}
+
+.package:hover,
+.package:active {
+    box-shadow: 5px 5px 5px v.$dark-blue;
+    animation: push 1s ease-out forwards;
+}
+
+.package a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 2rem;
+}
+
+.package__badge {
+    position: absolute;
+    width: 12rem;
+    top: 0;
+    right: 0;
+    margin: 0;
+    background: #FF595A;
+    box-shadow: 1px 1px 0 v.$dark-blue;
+    color: v.$dark-blue;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transform: rotate(45deg) translate(3.5rem, -1rem);
+}
+
+
+.package__title {
+    background: #7A7A7A;
+    color: v.$dark-blue;
+    padding: 0.6rem;
+    box-shadow: 5px 5px 0 v.$dark-blue;
+    border-radius: 5px;
+}
+
+.package__title--plus {
+    background: v.$teal-green;
+    color: v.$dark-blue;
+    padding: 0.6rem;
+    box-shadow: 5px 5px 0 v.$dark-blue;
+    border-radius: 5px;
+}
+
+.package__title--premium {
+    background: #FF595A;
+    color: v.$dark-blue;
+    padding: 0.6rem;
+    box-shadow: 5px 5px 0 v.$dark-blue;
+    border-radius: 5px;
+}
+
+.package__subtitle {
+    background: v.$dark-blue;
+    color: #CAC0B3;
+    padding: 0.6rem;
+    box-shadow: 5px 5px 0 v.$teal-green;
+    border-radius: 5px;
+}
+
+.package__info {
+    background-color: v.$teal-green;
+    color: #CAC0B3;
+    padding: 1.5rem 0.6rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#plus {
+    background-color: rgba(204, 204, 204, 0.90);
+}
+
+#free {
+    background-color: rgba(204, 204, 204, 0.90);
+    float: right;
+    border-right: none;
+    border-left: 4px solid v.$teal-green;
+    text-align: right;
+}
+
+#free:hover,
+#free:active {
+    box-shadow: -5px 5px 5px v.$dark-blue;
+}
+
+#premium {
+    background-color: rgba(204, 204, 204, 0.90);
+}
+
+@media (min-width: 40rem) {
+    main {
+        max-width: 1500px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .package {
+        border-left: 4px solid v.$teal-green;
+    }
+
+    #free {
+        border-right: 4px solid v.$teal-green;
+        ;
+    }
+}
+
+@keyframes push {
+    0% {
+        transform: translateY(0);
+    }
+
+    33% {
+        transform: translateY(-0.5rem);
+    }
+
+    100% {
+        transform: translateY(-0.75rem);
+    }
+}

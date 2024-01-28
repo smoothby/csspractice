@@ -1,0 +1,152 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.testimonial {
+    font-size: 1.2rem;
+    background-color: #308972;
+    overflow: hidden;
+  }
+  
+  .testimonial__info {
+    padding: 0.9rem;
+    z-index: 100;
+  }
+  
+  /* .testimonial__list {
+      width: 80%;
+      margin: auto;
+  } */
+  .testimonial:first-of-type {
+    margin-top: 3rem;
+  }
+  
+  .testimonial__image-container {
+    width: 100%;
+    max-width: 40rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .testimonial__image {
+    width: 100%;
+    vertical-align: top;
+    /* Fix whitespace bug for inline-block image */
+  }
+  
+  #customer-2.testimonial {
+    text-align: right;
+  }
+  
+  #customer-2.testimonial__info {
+    text-align: right;
+  }
+  
+  .testimonial__name {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 2rem;
+    margin: 0.75rem 0;
+    padding: 0.5rem;
+    color: #FF595A;
+    background-color: #001233;
+    -webkit-box-shadow: 5px 5px 0 #CAC0B3;
+            box-shadow: 5px 5px 0 #CAC0B3;
+    border-radius: 5px;
+  }
+  
+  .testimonial__subtitle {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #FFF;
+  }
+  
+  .testimonial__subtitle a {
+    color: inherit;
+    -webkit-text-decoration: underline dotted #CCC;
+            text-decoration: underline dotted #CCC;
+  }
+  
+  .testimonial__subtitle a:hover,
+  .testimonial__subtitle a:active {
+    text-decoration: none;
+  }
+  
+  .testimonial__text {
+    margin: 0.75rem 0;
+    color: #FFF;
+  }
+  
+  @media (min-width: 40rem) {
+    .testimonial {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 2rem auto;
+      max-width: 1500px;
+    }
+    .testimonial__image-container {
+      width: 66%;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      -webkit-transform: skew(20deg);
+          -ms-transform: skew(20deg);
+              transform: skew(20deg);
+      overflow: hidden;
+    }
+    .testimonial__image {
+      -webkit-transform: skew(-20deg) scale(1.5);
+          -ms-transform: skew(-20deg) scale(1.5);
+              transform: skew(-20deg) scale(1.5);
+    }
+    .testimonial__info {
+      width: 30%;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+    }
+    #customer-1:hover .testimonial__image-container {
+      -webkit-animation: flipCustomer 1s ease-out forwards;
+              animation: flipCustomer 1s ease-out forwards;
+    }
+    #customer-2:hover .testimonial__image-container {
+      -webkit-animation: flipCustomer 1s ease-out forwards;
+              animation: flipCustomer 1s ease-out forwards;
+    }
+  }
+  @-webkit-keyframes flipCustomer {
+    0% {
+      -webkit-transform: rotateY(0) skew(20deg);
+              transform: rotateY(0) skew(20deg);
+    }
+    50% {
+      -webkit-transform: rotateY(160deg) skew(20deg);
+              transform: rotateY(160deg) skew(20deg);
+    }
+    100% {
+      -webkit-transform: rotateY(360deg) skew(20deg);
+              transform: rotateY(360deg) skew(20deg);
+    }
+  }
+  @keyframes flipCustomer {
+    0% {
+      -webkit-transform: rotateY(0) skew(20deg);
+              transform: rotateY(0) skew(20deg);
+    }
+    50% {
+      -webkit-transform: rotateY(160deg) skew(20deg);
+              transform: rotateY(160deg) skew(20deg);
+    }
+    100% {
+      -webkit-transform: rotateY(360deg) skew(20deg);
+              transform: rotateY(360deg) skew(20deg);
+    }
+  }
