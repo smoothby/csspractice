@@ -104,6 +104,7 @@ main {
 
 .main-nav__items {
     display: flex;
+    align-items: center;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -133,7 +134,6 @@ main {
     background: v.$orange-red;
     padding: 0.5rem 1rem;
     border-radius: 5px;
-
 }
 
 .main-nav__item--cta {

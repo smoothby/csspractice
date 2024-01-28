@@ -5,4 +5,4 @@ This is just a dummy website that I've created that uses no framework, for the p
 * Responsive, mobile first design with Flexbox and Grid
 * JavaScript
 * SVG
-* SCSSSS
+* SCSS
