@@ -1,6 +1,6 @@
 .testimonial {
     font-size: 1.2rem;
-    background-color: #308972;
+    background-color: var(--teal-green);
     overflow: hidden;
 }
 
@@ -44,8 +44,8 @@
     font-size: 2rem;
     margin: 0.75rem 0;
     padding: 0.5rem;
-    color: #FF595A;
-    background-color: #001233;
+    color: var(--orange-red);
+    background-color: var(--dark-blue);
     box-shadow: 5px 5px 0 #CAC0B3;
     border-radius: 5px;
 }

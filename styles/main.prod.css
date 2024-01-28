@@ -1,0 +1,250 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.modal {
+    position: fixed;
+    opacity: 0;
+    -webkit-transform: translateY(-3rem);
+        -ms-transform: translateY(-3rem);
+            transform: translateY(-3rem);
+    -webkit-transition: opacity 0.2s ease-out, -webkit-transform 0.5s ease-out;
+    transition: opacity 0.2s ease-out, -webkit-transform 0.5s ease-out;
+    -o-transition: opacity 0.2s ease-out, transform 0.5s ease-out;
+    transition: opacity 0.2s ease-out, transform 0.5s ease-out;
+    transition: opacity 0.2s ease-out, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+    z-index: 200;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal__title {
+    color: var(--dark-blue);
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+  
+  .modal__actions {
+    text-align: center;
+  }
+  
+  .modal__action {
+    border: 1px solid var(--teal-green);
+    background: var(--teal-green);
+    text-decoration: none;
+    color: #fff;
+    font: inherit;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .modal__action:hover,
+  .modal__action:active {
+    background: #2ddf5c;
+    border-color: #2ddf5c;
+  }
+  
+  .modal__action--no {
+    background: var(--orange-red);
+    border-color: var(--orange-red);
+  }
+  
+  .modal__action--no:hover,
+  .modal__action--no:active {
+    background: #ff0000;
+    border-color: #ff0000;
+  }
+  
+  #product-overview {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: url("/projects/csspractice/images/main-header-bg.jpg") center/cover no-repeat;
+    width: 100vw;
+    height: 40vh;
+  }
+  
+  #product-overview h1 {
+    font-size: 1.6rem;
+    color: var(--dark-blue);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .section-title {
+    color: #cac0b3;
+    text-align: center;
+  }
+  
+  .plan {
+    background: #cac0b3;
+    color: var(--dark-blue);
+    text-align: center;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .plan--highlighted {
+    background: var(--orange-red);
+  }
+  
+  .plan__annotation {
+    background: var(--dark-blue);
+    color: var(--orange-red);
+    padding: 0.5rem;
+    -webkit-box-shadow: 2px 2px 0 #cac0b3;
+            box-shadow: 2px 2px 0 #cac0b3;
+    border-radius: 5px;
+  }
+  
+  .plan__title {
+    color: var(--orange-red);
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .plan__price {
+    color: var(--teal-green);
+    margin: 0;
+  }
+  
+  .plan--highlighted .plan__title {
+    color: var(--dark-blue);
+  }
+  
+  .plan--highlighted .plan__price {
+    color: #cac0b3;
+  }
+  
+  .plan__features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .plan__feature {
+    margin: 0.5rem 0;
+  }
+  
+  #key-features {
+    background: #cac0b3;
+    margin-top: 5rem;
+    padding: 1rem;
+  }
+  
+  #key-features .section-title {
+    color: var(--dark-blue);
+    margin: 2rem;
+  }
+  
+  .key-feature__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .key-feature__image {
+    background: var(--dark-blue);
+    width: 128px;
+    height: 128px;
+    border: 2px solid #cac0b3;
+    border-radius: 50%;
+    margin: auto;
+    padding: 1.2rem;
+  }
+  
+  .key-feature__description {
+    color: var(--dark-blue);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  @media (min-width: 40rem) and (min-height: 40rem) {
+    #product-overview {
+      height: 50vh;
+    }
+  
+    #product-overview h1 {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (min-width: 40rem) {
+    .plan__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 100%;
+    }
+  
+    .plan {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 30%;
+      height: 26rem;
+      min-width: 12rem;
+      max-width: 23rem;
+      margin: 0.5rem;
+      -webkit-box-shadow: 5px 5px 0 var(--orange-red);
+              box-shadow: 5px 5px 0 var(--orange-red);
+    }
+  
+    .plan--highlighted {
+      -webkit-box-shadow: 5px 5px 0 #cac0b3;
+              box-shadow: 5px 5px 0 #cac0b3;
+      height: 30rem;
+      z-index: 50;
+    }
+  
+    .key-feature {
+      width: 30%;
+      max-width: 23rem;
+    }
+  
+    .key-feature__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+  }

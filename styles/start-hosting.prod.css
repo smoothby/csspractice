@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .signup-title {
     text-align: center;
     font-size: 1.8rem;
@@ -7,6 +14,7 @@
 
 .signup-form {
     padding: 1rem;
+    display: -ms-grid;
     display: grid;
     grid-auto-rows: 2rem;
     grid-row-gap: 0.5rem;
@@ -78,18 +86,23 @@
     .signup-form {
         margin: auto;
         width: 30rem;
+        -ms-grid-columns: 10rem 0.5rem auto;
         grid-template-columns: 10rem auto;
         grid-row-gap: 1rem;
         grid-column-gap: 0.5rem;
     }
 
     .signup-form button[type="submit"] {
+        -ms-grid-column: 2;
         grid-column: 2;
         width: 10rem;
     }
 
     .signup-form__checkbox {
+        -ms-grid-column: 2;
         grid-column: 2;
-        justify-content: end;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: end;
     }
 }
