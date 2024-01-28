@@ -1,123 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!--
-                            █████     █████                     █████       
-                           ░░███     ░░███                     ░░███        
- █████████████    ██████   ███████   ███████   █████ ████       ░███████    
-░░███░░███░░███  ░░░░░███ ░░░███░   ░░░███░   ░░███ ░███        ░███░░███   
- ░███ ░███ ░███   ███████   ░███      ░███     ░███ ░███        ░███ ░███   
- ░███ ░███ ░███  ███░░███   ░███ ███  ░███ ███ ░███ ░███        ░███ ░███   
- █████░███ █████░░████████  ░░█████   ░░█████  ░░███████        ████████  ██
-░░░░░ ░░░ ░░░░░  ░░░░░░░░    ░░░░░     ░░░░░    ░░░░░███       ░░░░░░░░  ░░ 
-                                                ███ ░███                    
-                                               ░░██████                     
-                                                ░░░░░░                      
+  <!-- 
+                   _    _              _       
+ _ __ ___    __ _ | |_ | |_  _   _    | |__    
+| '_ ` _ \  / _` || __|| __|| | | |   | '_ \   
+| | | | | || (_| || |_ | |_ | |_| |   | |_) |_ 
+|_| |_| |_| \__,_| \__| \__| \__, |   |_.__/(_)
+                             |___/             
 -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
     <title>Dummy website - CSS3, no framework.</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-    <link rel="manifest" href="../site.webmanifest">
-    <link rel="stylesheet" href="../styles/shared.css">
-    <link rel="stylesheet" href="../styles/packages.css">
-</head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon-16x16.png"
+    />
+    <link rel="manifest" href="../site.webmanifest" />
+    <link rel="stylesheet" href="../styles/shared.css" />
+    <link rel="stylesheet" href="../styles/packages.css" />
+  </head>
 
-<body>
+  <body>
     <div class="backdrop"></div>
     <div class="background"></div>
     <header class="main-header">
-        <div>
-            <button class="toggle-button">
-                <span class="toggle-button__bar"></span>
-                <span class="toggle-button__bar"></span>
-                <span class="toggle-button__bar"></span>
-            </button>
-            <a href="../index.html" class="main-header__brand">
-                <img src="../android-chrome-192x192.png" alt="Company Logo">
-            </a>
-        </div>
-        <nav class="main-nav">
-            <ul class="main-nav__items">
-                <li class="main-nav__item">
-                    <a href="index.html">Packages</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="../customers/index.html">Customers</a>
-                </li>
-                <li class="main-nav__item main-nav__item--cta">
-                    <a href="../start-hosting/index.html">Start Hosting</a>
-                </li>
-            </ul>
-        </nav>
+      <div>
+        <button class="toggle-button">
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+        </button>
+        <a href="../index.html" class="main-header__brand">
+          <img src="../android-chrome-192x192.png" alt="Company Logo" />
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a href="index.html">Packages</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="../customers/index.html">Customers</a>
+          </li>
+          <li class="main-nav__item main-nav__item--cta">
+            <a href="../start-hosting/index.html">Start Hosting</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <nav class="mobile-nav">
-        <ul class="mobile-nav__items">
-            <li class="mobile-nav__item">
-                <a href="index.html">Packages</a>
-            </li>
-            <li class="mobile-nav__item">
-                <a href="../customers/index.html">Customers</a>
-            </li>
-            <li class="mobile-nav__item mobile-nav__item--cta">
-                <a href="../start-hosting/index.html">Start Hosting</a>
-            </li>
-        </ul>
+      <ul class="mobile-nav__items">
+        <li class="mobile-nav__item">
+          <a href="index.html">Packages</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="../customers/index.html">Customers</a>
+        </li>
+        <li class="mobile-nav__item mobile-nav__item--cta">
+          <a href="../start-hosting/index.html">Start Hosting</a>
+        </li>
+      </ul>
     </nav>
     <main>
-        <section class="package" id="plus">
-            <a href="#">
-                <h1 class="package__title--plus">Our PLUS Plan</h1>
-                <h2 class="package__badge">RECOMMENDED</h2>
-                <h2 class="package__subtitle">The most popular choice for our customers.</h2>
-                <p class="package__info">Benefit from increased storage and faster support to ensure that your
-                    mission-critical data and
-                    applications are always available! </p>
-            </a>
-        </section>
-        <section class="package" id="free">
-            <a href="#">
-                <h1 class="package__title">Our FREE Plan</h1>
-                <h2 class="package__subtitle">An extremely solid start into our hosting world.</h2>
-                <p class="package__info">Get started immediately at zero cost!</p>
-            </a>
-        </section>
-        <div class="clearfix"></div>
-        <section class="package" id="premium">
-            <a href="#">
-                <h1 class="package__title--premium">Our PREMIUM Plan</h1>
-                <h2 class="package__subtitle">All your enterprise needs. Instant support, guaranteed uptime.</h2>
-                <p class="package__info">The best solution for small to large companies, because hosting shouldn't be a
-                    barrier!</p>
-            </a>
-        </section>
+      <section class="package" id="plus">
+        <a href="#">
+          <h1 class="package__title--plus">Our PLUS Plan</h1>
+          <h2 class="package__badge">RECOMMENDED</h2>
+          <h2 class="package__subtitle">
+            The most popular choice for our customers.
+          </h2>
+          <p class="package__info">
+            Benefit from increased storage and faster support to ensure that
+            your mission-critical data and applications are always available!
+          </p>
+        </a>
+      </section>
+      <section class="package" id="free">
+        <a href="#">
+          <h1 class="package__title">Our FREE Plan</h1>
+          <h2 class="package__subtitle">
+            An extremely solid start into our hosting world.
+          </h2>
+          <p class="package__info">Get started immediately at zero cost!</p>
+        </a>
+      </section>
+      <div class="clearfix"></div>
+      <section class="package" id="premium">
+        <a href="#">
+          <h1 class="package__title--premium">Our PREMIUM Plan</h1>
+          <h2 class="package__subtitle">
+            All your enterprise needs. Instant support, guaranteed uptime.
+          </h2>
+          <p class="package__info">
+            The best solution for small to large companies, because hosting
+            shouldn't be a barrier!
+          </p>
+        </a>
+      </section>
     </main>
     <footer class="main-footer">
-        <nav class="footer-nav">
-            <ul class="main-footer__links">
-                <li class="main-footer__link">
-                    <a href="#">Support</a>
-                </li>
-                <li class="main-footer__link">
-                    <a href="#">Terms</a>
-                </li>
-            </ul>
-            <p>
-                Photo by <a
-                    href="https://unsplash.com/@freeche?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                    class="credit">Kvistholt Photography</a> on <a
-                    href="https://unsplash.com/photos/photo-of-computer-cables-oZPwn40zCK4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                    class="credit">Unsplash</a>
-            </p>
-        </nav>
+      <nav class="footer-nav">
+        <ul class="main-footer__links">
+          <li class="main-footer__link">
+            <a href="#">Support</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="#">Terms</a>
+          </li>
+        </ul>
+        <p>
+          Photo by
+          <a
+            href="https://unsplash.com/@freeche?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            class="credit"
+            >Kvistholt Photography</a
+          >
+          on
+          <a
+            href="https://unsplash.com/photos/photo-of-computer-cables-oZPwn40zCK4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            class="credit"
+            >Unsplash</a
+          >
+        </p>
+      </nav>
     </footer>
     <script src="../js/shared.js"></script>
-
-</body>
-
+  </body>
 </html>

@@ -24,7 +24,7 @@
 }
 
 .signup-form input[id*="terms"],
-.signup-form input[id*="terms"] + label {
+.signup-form input[id*="terms"]+label {
     display: inline-block;
     width: auto;
     vertical-align: bottom;
@@ -71,7 +71,7 @@
 .signup-form :invalid {
     border-color: #FF0000 !important;
     background: #ffc2c2;
-    
+
 }
 
 @media (min-width: 40rem) {

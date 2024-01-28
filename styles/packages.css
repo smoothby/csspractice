@@ -13,7 +13,7 @@ main {
 
 .package {
     width: 80%;
-    margin: 1rem 0 2rem 0;
+    margin: 2rem 0 2rem 0;
     border: 4px solid #308972;
     border-left: none;
     background-color: #CCC;
@@ -24,6 +24,7 @@ main {
 .package:hover,
 .package:active {
     box-shadow: 5px 5px 5px #001233;
+    animation: push 1s ease-out forwards;
 }
 
 .package a {
@@ -127,6 +128,21 @@ main {
     }
 
     #free {
-        border-right: 4px solid #308972;;
+        border-right: 4px solid #308972;
+        ;
+    }
+}
+
+@keyframes push {
+    0% {
+        transform: translateY(0);
+    }
+
+    33% {
+        transform: translateY(-0.5rem);
+    }
+
+    100% {
+        transform: translateY(-0.75rem);
     }
 }

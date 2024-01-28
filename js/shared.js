@@ -1,9 +1,10 @@
-let backdrop = document.querySelector(".backdrop");
-let modal = document.querySelector(".modal");
-let modalButtonNo = document.querySelector(".modal__action--no");
-let selectPlanButtons = document.querySelectorAll(".plan button");
-let burgerButton = document.querySelector(".toggle-button");
-let mobileNav = document.querySelector(".mobile-nav");
+const backdrop = document.querySelector(".backdrop");
+const modal = document.querySelector(".modal");
+const modalButtonNo = document.querySelector(".modal__action--no");
+const selectPlanButtons = document.querySelectorAll(".plan button");
+const burgerButton = document.querySelector(".toggle-button");
+const mobileNav = document.querySelector(".mobile-nav");
+const ctaButton = document.querySelector(".main-nav__item--cta");
 
 // Grab all of the plan buttons
 for (var i = 0; i < selectPlanButtons.length; i++) {
@@ -47,4 +48,14 @@ burgerButton.addEventListener("click", function () {
   }, 10);
 });
 
-// console.log(selectPlanButtons);
+ctaButton.addEventListener("animationstart", function (event) {
+  console.log("Animation started", event);
+});
+
+ctaButton.addEventListener("animationend", function (event) {
+  console.log("Animation ended", event);
+});
+
+ctaButton.addEventListener("animationiteration", function (event) {
+  console.log("Animation iterated", event);
+});
